@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アーカイブ - デモ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .archive-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .archive-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        .archive-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+        }
+        
+        .archive-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .archive-item .date {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 0.75rem;
+        }
+        
+        .archive-item .description {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .archive-item:nth-child(1) { animation-delay: 0.1s; }
+        .archive-item:nth-child(2) { animation-delay: 0.2s; }
+        .archive-item:nth-child(3) { animation-delay: 0.3s; }
+        .archive-item:nth-child(4) { animation-delay: 0.4s; }
+        .archive-item:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 アーカイブ</h1>
+            <p>過去のコンテンツ一覧</p>
+        </div>
+        
+        <div class="archive-list">
+            <div class="archive-item">
+                <h2>サンプル記事 1</h2>
+                <div class="date">2026年2月1日</div>
+                <div class="description">
+                    これはアーカイブページのサンプル記事です。過去のコンテンツを整理して表示します。
+                </div>
+            </div>
+            
+            <div class="archive-item">
+                <h2>サンプル記事 2</h2>
+                <div class="date">2026年1月28日</div>
+                <div class="description">
+                    各記事にはタイトル、日付、説明が含まれています。ホバーエフェクトでインタラクティブな体験を提供します。
+                </div>
+            </div>
+            
+            <div class="archive-item">
+                <h2>サンプル記事 3</h2>
+                <div class="date">2026年1月20日</div>
+                <div class="description">
+                    モダンなガラスモーフィズムデザインで、美しく整理されたアーカイブページを作成しました。
+                </div>
+            </div>
+            
+            <div class="archive-item">
+                <h2>サンプル記事 4</h2>
+                <div class="date">2026年1月15日</div>
+                <div class="description">
+                    レスポンシブデザインに対応しており、様々なデバイスで快適に閲覧できます。
+                </div>
+            </div>
+            
+            <div class="archive-item">
+                <h2>サンプル記事 5</h2>
+                <div class="date">2026年1月10日</div>
+                <div class="description">
+                    フェードインアニメーションにより、スムーズな表示効果を実現しています。
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="index.html" class="back-link">← ホームに戻る</a>
+        </div>
+    </div>
+</body>
+</html>

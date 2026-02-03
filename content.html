@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンテンツ - デモ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+        
+        .content {
+            margin-top: 2rem;
+        }
+        
+        .content h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .content h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+            opacity: 0.95;
+        }
+        
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 4px solid rgba(255, 255, 255, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+        
+        .nav-link {
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: inline-block;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 2rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .navigation {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-card">
+            <div class="header">
+                <h1>📝 サンプルコンテンツ</h1>
+                <div class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>👤 デモユーザー</span>
+                    <span>🏷️ デモ</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                <p>
+                    これはコンテンツページのサンプルです。記事やブログ投稿などの詳細ページとして使用できます。
+                    美しいデザインと読みやすいレイアウトで、ユーザーに快適な読書体験を提供します。
+                </p>
+                
+                <h2>セクション 1: はじめに</h2>
+                <p>
+                    モダンなWebデザインの原則に基づいて、このコンテンツページを作成しました。
+                    ガラスモーフィズム効果とグラデーション背景により、視覚的に魅力的なページになっています。
+                </p>
+                
+                <div class="highlight-box">
+                    <strong>💡 ヒント:</strong> このハイライトボックスは重要な情報や引用を強調するために使用できます。
+                </div>
+                
+                <h2>セクション 2: 主な特徴</h2>
+                <p>このコンテンツページには以下の特徴があります：</p>
+                <ul>
+                    <li>レスポンシブデザイン - 様々なデバイスに対応</li>
+                    <li>読みやすいタイポグラフィ - 適切な行間とフォントサイズ</li>
+                    <li>美しいアニメーション - スムーズなフェードイン効果</li>
+                    <li>ナビゲーションリンク - 他のページへの簡単なアクセス</li>
+                </ul>
+                
+                <h3>サブセクション</h3>
+                <p>
+                    コンテンツは複数のセクションに分けることができ、見出しタグ（h2, h3）を使用して階層構造を作成できます。
+                    これにより、長い記事でも読みやすく整理されます。
+                </p>
+                
+                <h2>セクション 3: まとめ</h2>
+                <p>
+                    このページは、ブログ、ドキュメント、記事など、様々な用途に使用できます。
+                    必要に応じて、コンテンツやスタイルをカスタマイズしてください。
+                </p>
+                
+                <div class="highlight-box">
+                    <strong>✨ まとめ:</strong> 美しく機能的なコンテンツページで、ユーザーに最適な体験を提供しましょう。
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="index.html" class="nav-link">← ホーム</a>
+                <a href="archive.html" class="nav-link">アーカイブ →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
